@@ -1,0 +1,3 @@
+[submodule "module/aether"]
+	path = module/aether
+	url = git@github.com:alesegdia/aether.git
