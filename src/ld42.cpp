@@ -3,7 +3,9 @@
 
 LD42::LD42(int w, int h)
     : aether::core::Application(w, h),
-      menuScreen(this)
+      menuScreen(this),
+      gameplayScreen(this),
+      endScreen(this)
 {
 
 }
@@ -12,6 +14,8 @@ int LD42::ready(int argc, char **argv)
 {
     assets.load();
     setScreen(&menuScreen);
+    //assets.theme.playmode(aether::audio::PlayMode::Loop);
+    assets.theme.play();
     return 0;
 }
 

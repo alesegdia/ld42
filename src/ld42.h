@@ -1,6 +1,8 @@
 #include <aether/aether.h>
 
 #include "screens/menu.h"
+#include "screens/gameplayscreen.h"
+#include "screens/endscreen.h"
 #include "assets.h"
 
 class LD42 : public aether::core::Application
@@ -15,6 +17,8 @@ public:
     void dispose() override;
 
     MenuScreen menuScreen;
+    GameplayScreen gameplayScreen;
+    EndScreen endScreen;
 
     Assets assets;
 
